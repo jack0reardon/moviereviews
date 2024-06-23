@@ -9,7 +9,8 @@ services:
     plan: free
     name: moviereviews
     runtime: python
-    startCommand: "python manage.py runserver"
+    buildCommand: "./build.sh"
+    startCommand: "python -m gunicorn moviereviews.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
