@@ -9,7 +9,6 @@ services:
     plan: free
     name: moviereviews
     runtime: python
-    buildCommand: "pip install -r requirements.txt"
     startCommand: "python manage.py runserver"
     envVars:
       - key: DATABASE_URL
