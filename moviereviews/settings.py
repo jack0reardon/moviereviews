@@ -16,7 +16,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-RUN_SERVER_PORT = 10000
+# RUN_SERVER_PORT = 10000
 
 
 # Quick-start development settings - unsuitable for production
